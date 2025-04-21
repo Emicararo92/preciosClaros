@@ -40,7 +40,7 @@ const CalculatorForm = ({ onCalculate, onReset }: CalculatorFormProps) => {
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.field}>
         <label htmlFor="price" className={styles.label}>
-          Precio de contado
+          Precio dee contado
         </label>
         <input
           type="number"

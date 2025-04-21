@@ -25,7 +25,7 @@ export class InflationService {
       if (error instanceof Error) {
         return `Error fetching inflation data: ${error.message}`;
       }
-      return 'Unknown error occurred';
+      return 'Unknown error, occurred';
     }
   }
 }
