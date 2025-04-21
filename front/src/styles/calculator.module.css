@@ -1,23 +1,30 @@
 .container {
+  margin-top: 2rem;
   max-width: 600px;
-  margin: 0 auto;
   padding: 20px;
-  background: #fffdf5;
+  background: #f1f9f1;
   border: 1px solid #e3e3e3;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra el contenido horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
 }
 
-.container h1 {
-  text-align: center;
+.container h2 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #b8860b;
+  color: #4caf50;
+}
+
+.container img {
+  margin-bottom: 20px; /* Espacio entre el logo y el título */
 }
 
 .container p {
-  background: #fafafa;
-  border-left: 4px solid #b8860b;
+  background: #f5fafd;
+  border-left: 4px solid #4caf50;
   padding: 8px 12px;
   border-radius: 4px;
   margin: 10px 0;
@@ -26,7 +33,7 @@
 
 .container h3 {
   margin-top: 25px;
-  color: #b8860b;
+  color: #4caf50;
   font-size: 1.2rem;
   border-bottom: 1px solid #ddd;
   padding-bottom: 5px;
@@ -52,24 +59,33 @@
   background: #f9f9f9;
 }
 
-@media (min-width: 768px) {
-  .container {
-    padding: 40px;
-  }
+.showInstallmentsButton,
+.resetButton {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
 
-  .container h1 {
-    font-size: 2.2rem;
-  }
+.showInstallmentsButton:hover,
+.resetButton:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
 
-  .container p {
-    font-size: 1.1rem;
-  }
-
-  .container h3 {
-    font-size: 1.4rem;
-  }
-
-  .container li {
-    font-size: 1.05rem;
-  }
+.recommendationBox {
+  background-color: #eaffea;
+  border: 2px solid #3ca85a;
+  padding: 1rem;
+  border-radius: 8px;
+  margin: 1rem 0;
+  color: #2e7d32;
+  font-weight: 500;
 }

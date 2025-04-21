@@ -24,6 +24,12 @@ const CalculatorForm: React.FC<CalculatorFormProps> = ({
   installments,
   setInstallments,
 }) => {
+  const handleReset = () => {
+    setTotalCashPrice(0);
+    setTotalInstallmentsPrice(0);
+    setInstallments(1);
+  };
+
   return (
     <form
       className={styles.formContainer}
@@ -36,7 +42,8 @@ const CalculatorForm: React.FC<CalculatorFormProps> = ({
         <label>Precio de contado ($):</label>
         <input
           type="number"
-          value={totalCashPrice}
+          value={totalCashPrice || ""}
+          placeholder="Ej: 5000"
           onChange={(e) => setTotalCashPrice(Number(e.target.value))}
         />
       </div>
@@ -44,7 +51,8 @@ const CalculatorForm: React.FC<CalculatorFormProps> = ({
         <label>Precio total en cuotas ($):</label>
         <input
           type="number"
-          value={totalInstallmentsPrice}
+          value={totalInstallmentsPrice || ""}
+          placeholder="Ej: 6000"
           onChange={(e) => setTotalInstallmentsPrice(Number(e.target.value))}
         />
       </div>
@@ -62,7 +70,11 @@ const CalculatorForm: React.FC<CalculatorFormProps> = ({
           <option value={12}>12</option>
           <option value={18}>18</option>
           <option value={24}>24</option>
+          <option value={32}>32</option>
           <option value={36}>36</option>
+          <option value={42}>42</option>
+          <option value={48}>48</option>
+          <option value={60}>60</option>
         </select>
       </div>
       <button type="submit">Calcular</button>

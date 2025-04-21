@@ -1,0 +1,75 @@
+.miniCalcWrapper {
+  margin-top: 10px;
+}
+
+.toggleCalcButton {
+  background-color: transparent;
+  border: none;
+  color: #4caf50;
+  cursor: pointer;
+  font-size: 0.95rem;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.toggleCalcButton:hover {
+  color: #388e3c;
+}
+
+.miniCalcContainer {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid #c8e6c9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.miniCalcContainer h4 {
+  margin-top: 0;
+  color: #4caf50;
+  font-size: 1.2rem;
+}
+
+.miniCalcContainer label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.miniCalcContainer input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.miniCalcContainer input:focus {
+  border-color: #4caf50;
+}
+
+.miniCalcContainer button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.miniCalcContainer button:hover {
+  background-color: #388e3c;
+}
+
+.miniCalcContainer p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2e7d32;
+}
