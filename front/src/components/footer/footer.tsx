@@ -1,4 +1,5 @@
-import styles from "./footer.module.css";
+import styles from "../../styles/footer.module.css";
+import { FaLinkedin, FaGithub, FaGlobe } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -7,25 +8,28 @@ const Footer = () => {
       <p>Desarrollador Frontend | Programador | Diseñador Web</p>
       <div className={styles.socialLinks}>
         <a
-          href="https://www.linkedin.com/in/emilianocararo"
+          href="www.linkedin.com/in/emilianocararofrontend"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
-          LinkedIn
+          <FaLinkedin size={28} />
         </a>
         <a
-          href="https://emilianocararo.com"
+          href="https://my-porfolio-sepia-iota.vercel.app/"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Portfolio"
         >
-          Portfolio
+          <FaGlobe size={28} />
         </a>
         <a
-          href="https://github.com/emilianocararo"
+          href="https://github.com/Emicararo92"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="GitHub"
         >
-          GitHub
+          <FaGithub size={28} />
         </a>
       </div>
     </footer>

@@ -1,4 +1,5 @@
 .footer {
+  margin-top: 1rem;
   background-color: #eaf8f4;
   color: #333;
   padding: 20px;
@@ -9,7 +10,7 @@
 }
 
 .footer h2 {
-  color: #64b5f6;
+  color: #4caf50;
   font-size: 1.5rem;
   margin-bottom: 10px;
 }
@@ -20,24 +21,25 @@
   margin-bottom: 15px;
 }
 
-.footer .social-links {
+.socialLinks {
   display: flex;
   justify-content: center;
   gap: 15px;
 }
 
-.footer .social-links a {
+.socialLinks a {
   text-decoration: none;
-  color: #64b5f6;
+  color: #4caf50;
   font-size: 1.2rem;
-  transition: color 0.3s;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.footer .social-links a:hover {
-  color: #42a5f5;
+.socialLinks a:hover {
+  transform: translateY(-3px);
+  color: #007f4e;
 }
 
-.footer .social-links a:focus {
+.socialLinks a:focus {
   outline: none;
 }
 
