@@ -1,0 +1,18 @@
+.recommendation {
+  background-color: #fefbe9;
+  border: 1px solid #b8860b;
+  padding: 15px;
+  border-radius: 8px;
+  color: #333;
+  font-size: 1rem;
+  margin: 20px 0;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .recommendation {
+    font-size: 1.2rem;
+    padding: 20px;
+  }
+}

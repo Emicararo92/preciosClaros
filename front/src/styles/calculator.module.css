@@ -1,271 +1,75 @@
 .container {
-  max-width: 100%; /* Deja que ocupe todo el ancho */
-  margin: 1rem auto;
-  padding: 3rem;
-  background-color: #fafafa;
-  border: 1px solid #e0e0e0;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  display: flex; /* Usamos flexbox para organizar en filas */
-  flex-direction: column;
-  align-items: center;
-}
-
-.title {
-  text-align: center;
-  color: #333;
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-}
-
-.banner {
-  background-color: #28a745;
-  color: white;
+  max-width: 600px;
+  margin: 0 auto;
   padding: 20px;
-  border-radius: 15px;
-  margin-bottom: 30px;
+  background: #fffdf5;
+  border: 1px solid #e3e3e3;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #b8860b;
+}
+
+.container p {
+  background: #fafafa;
+  border-left: 4px solid #b8860b;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.container h3 {
+  margin-top: 25px;
+  color: #b8860b;
   font-size: 1.2rem;
-  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
 }
 
-.banner h3 {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
+.container ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
 }
 
-.banner p {
-  font-size: 1rem;
+.container li {
+  background: #fefefe;
+  border: 1px solid #e2e2e2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  transition: transform 0.2s ease;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  max-width: 500px; /* Aumentamos el max-width */
-  margin: 2rem auto;
-  padding: 3rem;
-  background-color: #fdf6ec;
-  border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  color: #000;
+.container li:hover {
+  transform: translateX(3px);
+  background: #f9f9f9;
 }
 
-.field {
-  width: 100%;
-  margin-bottom: 1.5rem;
-}
-
-.label {
-  display: block;
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: #444;
-}
-
-.input {
-  width: 100%;
-  padding: 0.75rem;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 15px;
-  background-color: #fff8f0;
-  outline: none;
-  transition: border-color 0.3s ease;
-}
-
-.input:focus {
-  border-color: #ffa07a;
-}
-
-.input::placeholder {
-  color: rgba(34, 33, 33, 0.681);
-  font-style: italic;
-}
-
-.button {
-  width: 100%;
-  padding: 1rem;
-  background-color: #ffa07a;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.button:hover {
-  background-color: #ff7f50;
-}
-
-.result {
-  margin-top: 1.5rem;
-  padding: 1rem 1.5rem;
-  border-radius: 15px;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.success {
-  background-color: #e6ffe6;
-  border: 1px solid #52c41a;
-  color: #237804;
-}
-
-.warning {
-  background-color: #fffbe6;
-  border: 1px solid #faad14;
-  color: #ad6800;
-}
-
-.error {
-  background-color: #fff1f0;
-  border: 1px solid #ff4d4f;
-  color: #a8071a;
-}
-
-@media (min-width: 600px) {
-  /* Cambiamos la orientación del formulario para pantallas más grandes */
-  .form {
-    display: flex; /* Esto hace que el formulario se alinee horizontalmente */
-
-    max-width: 700px; /* Ampliamos el max-width para desktop */
+@media (min-width: 768px) {
+  .container {
+    padding: 40px;
   }
 
-  .field {
-    width: 45%; /* Hacemos que los campos ocupen menos espacio */
-    margin-bottom: 1.5rem;
+  .container h1 {
+    font-size: 2.2rem;
   }
 
-  .title {
-    font-size: 2rem;
-  }
-
-  .banner h3 {
-    font-size: 1.8rem;
-  }
-
-  .banner p {
+  .container p {
     font-size: 1.1rem;
   }
 
-  .input {
-    font-size: 1.1rem;
+  .container h3 {
+    font-size: 1.4rem;
   }
 
-  .button {
-    font-size: 1.2rem;
+  .container li {
+    font-size: 1.05rem;
   }
-
-  .result {
-    font-size: 1.1rem;
-  }
-}
-
-.resetButton {
-  width: 100%;
-  padding: 1rem;
-  background-color: #ff6f61;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-  margin-top: 1rem;
-}
-
-.resetButton:hover {
-  background-color: #ff4d3d;
-}
-
-/* Modal */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro detrás del modal */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.modalContent {
-  background-color: #fff;
-  padding: 2rem;
-  border-radius: 20px;
-  width: 90%;
-  max-width: 500px;
-  position: relative;
-  text-align: center;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 2rem;
-  color: #888;
-  cursor: pointer;
-}
-
-.close:hover {
-  color: #333;
-}
-
-.result {
-  margin-top: 1.5rem;
-  padding: 1rem 1.5rem;
-  border-radius: 15px;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.success {
-  background-color: #e6ffe6;
-  border: 1px solid #52c41a;
-  color: #237804;
-}
-
-.warning {
-  background-color: #fffbe6;
-  border: 1px solid #faad14;
-  color: #ad6800;
-}
-
-.error {
-  background-color: #fff1f0;
-  border: 1px solid #ff4d4f;
-  color: #a8071a;
-}
-
-@media (min-width: 600px) {
-  .modalContent {
-    width: 500px;
-  }
-}
-
-/* Estilos del Botón de Reset */
-.resetButton {
-  width: 100%;
-  padding: 1rem;
-  background-color: #ff6f61;
-  color: white;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-  margin-top: 1rem;
-}
-
-.resetButton:hover {
-  background-color: #ff4d3d;
 }

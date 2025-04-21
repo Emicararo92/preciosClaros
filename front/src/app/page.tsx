@@ -1,9 +1,9 @@
-import ParentComponent from "@/components/ParentComponent/parentComponent";
+import Calcu from "@/components/calculator/calculator";
 
 function Page() {
   return (
     <div>
-      <ParentComponent />
+      <Calcu />
     </div>
   );
 }
